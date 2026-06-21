@@ -257,11 +257,9 @@ NumPy >= 1.24
 
 **Abdur Rahman**
 
-Computer & Communication Engineering Student
+[![GitHub](https://img.shields.io/badge/GitHub-abdurrahmancce-181717?style=for-the-badge&logo=github)](https://github.com/abdurrahmancce)
 
-🔗 GitHub: https://github.com/abdurrahmancce
-
-🔗 LinkedIn: https://www.linkedin.com/in/abdur-rahman-akash26/
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abdur%20Rahman-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/abdur-rahman-akash26/)
 
 ---
 
