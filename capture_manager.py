@@ -1,19 +1,3 @@
-"""
-capture_manager.py — Screenshot & Face Snapshot Manager
-=========================================================
-AI-Powered Face Detection System
-
-Handles:
-  • Manual screenshots     (S key)
-  • Manual face snapshots  (saved per tracked face ID)
-  • Auto-capture mode      (C key — periodic face snapshots)
-
-Output structure:
-  captures/
-  ├── screenshots/   ← full-frame screenshots
-  └── snapshots/     ← cropped face snapshots
-"""
-
 import cv2
 import os
 import time
