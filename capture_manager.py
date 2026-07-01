@@ -34,7 +34,7 @@ class CaptureManager:
 
         self._ensure_dirs()
 
-    # ── Setup ─────────────────────────────────────────────────────────────────
+    # Setup 
 
     def _ensure_dirs(self) -> None:
         for d in (self._screenshots_dir, self._snapshots_dir):
@@ -44,7 +44,7 @@ class CaptureManager:
             f"'{self._screenshots_dir}', '{self._snapshots_dir}'"
         )
 
-    # ── Properties ───────────────────────────────────────────────────────────
+    #  Properties 
 
     @property
     def auto_mode(self) -> bool:
@@ -61,7 +61,7 @@ class CaptureManager:
         log.info(f"Auto-capture {state}.")
         return self._auto_mode
 
-    # ── Internal helpers ──────────────────────────────────────────────────────
+    #  Internal helpers 
 
     @staticmethod
     def _timestamp() -> str:
@@ -78,7 +78,7 @@ class CaptureManager:
             log.error(f"Failed to save {path}: {exc}")
             return False
 
-    # ── Public save methods ───────────────────────────────────────────────────
+    #  Public save methods 
 
     def save_screenshot(self, frame) -> str:
         """
@@ -126,7 +126,7 @@ class CaptureManager:
         ok = self._write(path, crop)
         return os.path.abspath(path) if ok else ""
 
-    # ── Per-frame update (called inside the main loop) ────────────────────────
+    #  Per-frame update (called inside the main loop) 
 
     def update(self, frame, detection: DetectionResult) -> List[str]:
         """
