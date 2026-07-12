@@ -1,22 +1,11 @@
-"""
-config.py — Central Configuration
-===================================
-AI-Powered Face Detection System
-All tunable constants live here — modify freely to customise behaviour.
-"""
-
 import cv2
 
-# ═══════════════════════════════════════════════════════════════════════════════
 #  WINDOW
-# ═══════════════════════════════════════════════════════════════════════════════
 WINDOW_TITLE   = "AI Face Detection System"
 DEFAULT_WIDTH  = 1280
 DEFAULT_HEIGHT = 720
 
-# ═══════════════════════════════════════════════════════════════════════════════
 #  CAMERA
-# ═══════════════════════════════════════════════════════════════════════════════
 CAMERA_INDEX  = 0       # Change to 1 or 2 if default webcam is not found
 CAMERA_WIDTH  = 1280
 CAMERA_HEIGHT = 720
