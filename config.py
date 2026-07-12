@@ -63,9 +63,8 @@ BOX_TH     = 2   # Bounding-box line thickness
 TRACKER_MAX_DISAPPEARED = 15   # Frames a face can vanish before its ID is dropped
 TRACKER_MAX_DISTANCE    = 90   # Max pixel distance to re-match a face centroid
 
-# ═══════════════════════════════════════════════════════════════════════════════
 #  CAPTURE / SAVE
-# ═══════════════════════════════════════════════════════════════════════════════
+
 CAPTURES_DIR           = "captures"
 SCREENSHOT_SUBDIR      = "screenshots"
 SNAPSHOT_SUBDIR        = "snapshots"
