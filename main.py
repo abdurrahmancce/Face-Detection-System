@@ -227,18 +227,18 @@ class FaceDetectionApp:
 
 def _print_banner() -> None:
     banner = r"""
- ╔══════════════════════════════════════════════════════════╗
- ║          AI-POWERED FACE DETECTION SYSTEM                ║
- ║          Powered by Python  ·  OpenCV  ·  Haar Cascade   ║
  
- ║  Controls                                                ║
- ║   Q / ESC  →  Quit                                       ║
- ║   S        →  Save screenshot                            ║
- ║   E        →  Toggle eye detection                       ║
- ║   M        →  Toggle smile detection                     ║
- ║   C        →  Toggle auto-capture  (saves every 5 s)    ║
- ║   F        →  Toggle fullscreen                          ║
- ╚══════════════════════════════════════════════════════════╝
+           AI-POWERED FACE DETECTION SYSTEM                
+           Powered by Python  ·  OpenCV  ·  Haar Cascade   
+
+   Controls                                                
+    Q / ESC  →  Quit                                       
+    S        →  Save screenshot                            
+    E        →  Toggle eye detection                       
+    M        →  Toggle smile detection                     
+    C        →  Toggle auto-capture  (saves every 5 s)    
+    F        →  Toggle fullscreen                          
+ 
 """
     print(banner)
 
