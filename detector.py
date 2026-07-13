@@ -47,7 +47,7 @@ class CentroidTracker:
         self.rects      : OrderedDict[int, Tuple[int,int,int,int]] = OrderedDict()
         self.disappeared: OrderedDict[int, int]                = OrderedDict()
 
-    # ── private helpers ───────────────────────────────────────────────────────
+    #  private helpers 
 
     @staticmethod
     def _centroid(rect: Tuple[int,int,int,int]) -> Tuple[int,int]:
@@ -65,14 +65,14 @@ class CentroidTracker:
         del self.rects[oid]
         del self.disappeared[oid]
 
-    # ── public ────────────────────────────────────────────────────────────────
+    #  public 
 
     def update(self, rects: list) -> Dict[int, Tuple[int,int,int,int]]:
         """
         Feed new detections; get back a dict of {face_id: bounding_rect}.
         Pass an empty list when no faces are detected.
         """
-        # ── No detections: age all existing tracks ─────────────────────────
+        #  No detections: age all existing tracks 
         if not rects:
             for oid in list(self.disappeared):
                 self.disappeared[oid] += 1
