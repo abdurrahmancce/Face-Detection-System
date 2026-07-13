@@ -12,9 +12,7 @@ import config
 log = logging.getLogger(__name__)
 
 
-# ───────────────────────────────────────────────────────────────────────────────
 #  DATA CLASS
-# ───────────────────────────────────────────────────────────────────────────────
 
 @dataclass
 class DetectionResult:
@@ -26,9 +24,7 @@ class DetectionResult:
     face_ids: Dict[int, Tuple[int, int, int, int]] = field(default_factory=dict)
 
 
-# ───────────────────────────────────────────────────────────────────────────────
 #  CENTROID TRACKER
-# ───────────────────────────────────────────────────────────────────────────────
 
 class CentroidTracker:
     """
