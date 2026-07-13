@@ -1,15 +1,3 @@
-"""
-detector.py — Face Detection & Face Tracking
-==============================================
-AI-Powered Face Detection System
-
-Contains:
-  - DetectionResult  : dataclass holding all detections for one frame
-  - CentroidTracker  : lightweight tracker that assigns stable IDs to faces
-  - FaceDetector     : loads Haar Cascades, detects faces/eyes/smiles,
-                       computes pseudo-confidence scores
-"""
-
 import cv2
 import os
 import shutil
