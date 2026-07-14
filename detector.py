@@ -82,13 +82,13 @@ class CentroidTracker:
 
         new_cents = [self._centroid(r) for r in rects]
 
-        # ── No existing tracks: register everything fresh ──────────────────
+        #  No existing tracks: register everything fresh 
         if not self.objects:
             for r in rects:
                 self._register(r)
             return dict(self.rects)
 
-        # ── Match new centroids to existing tracks ─────────────────────────
+        #  Match new centroids to existing tracks 
         oids      = list(self.objects.keys())
         old_cents = list(self.objects.values())
 
@@ -131,9 +131,7 @@ class CentroidTracker:
         return dict(self.rects)
 
 
-# ───────────────────────────────────────────────────────────────────────────────
 #  FACE DETECTOR
-# ───────────────────────────────────────────────────────────────────────────────
 
 class FaceDetector:
     """
