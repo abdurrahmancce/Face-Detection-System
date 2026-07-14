@@ -175,7 +175,7 @@ class FaceDetector:
         )
 
     def _load_cascades(self) -> None:
-        # ── Face (required) ───────────────────────────────────────
+        #  Face (required) 
         path = self._resolve_cascade(config.CASCADE_FACE)
         self.face_cascade = cv2.CascadeClassifier(path)
         if self.face_cascade.empty():
