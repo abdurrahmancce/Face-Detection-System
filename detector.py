@@ -197,7 +197,7 @@ class FaceDetector:
             except Exception as exc:
                 log.warning(f"Optional cascade skipped ({filename}): {exc}")
 
-    # ── detection ─────────────────────────────────────────────────────────────
+    #  detection 
 
     def detect(
         self,
@@ -220,11 +220,11 @@ class FaceDetector:
         """
         result = DetectionResult()
 
-        # ── Pre-process ───────────────────────────────────────────
+        #  Pre-process 
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         gray = cv2.equalizeHist(gray)   # Improve detection in varied lighting
 
-        # ── Face detection ────────────────────────────────────────
+        #  Face detection 
         raw_faces = self.face_cascade.detectMultiScale(
             gray,
             scaleFactor  = config.FACE_SCALE_FACTOR,
@@ -242,7 +242,7 @@ class FaceDetector:
         result.faces    = face_list
         result.face_ids = self.tracker.update(face_list)
 
-        # ── Per-face: eye & smile detection ───────────────────────
+        #  Per-face: eye & smile detection 
         for (x, y, w, h) in face_list:
             face_gray = gray[y:y + h, x:x + w]
 
