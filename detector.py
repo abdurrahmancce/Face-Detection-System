@@ -152,7 +152,7 @@ class FaceDetector:
         self.tracker = CentroidTracker()
         self._load_cascades()
 
-    # ── cascade loading ───────────────────────────────────────────────────────
+    #  cascade loading 
 
     def _resolve_cascade(self, filename: str) -> str:
         """
@@ -185,7 +185,7 @@ class FaceDetector:
             )
         log.info("✅ Face cascade loaded successfully.")
 
-        # ── Eye & smile (optional — detection disabled gracefully if absent) ─
+        #  Eye & smile (optional — detection disabled gracefully if absent) 
         for filename, attr in [
             (config.CASCADE_EYE,   "eye_cascade"),
             (config.CASCADE_SMILE, "smile_cascade"),
